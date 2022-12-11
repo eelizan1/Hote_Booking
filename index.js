@@ -5,6 +5,7 @@ import authRoute from "./routes/auth.js"; // from files add .js extensions
 import usersRoute from "./routes/users.js"; // from files add .js extensions
 import hotelsRoute from "./routes/hotels.js"; // from files add .js extensions
 import roomsRoute from "./routes/rooms.js"; // from files add .js extensions
+import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config(); // connect to env data
@@ -30,6 +31,7 @@ mongoose.connection.on("disconnected", () => {
 // });
 
 // api middlewares from routes
+app.use(cookieParser());
 app.use(express.json()); // allows us to send json requests from client
 
 app.use("/api/auth", authRoute);
