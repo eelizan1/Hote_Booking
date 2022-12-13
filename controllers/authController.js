@@ -40,7 +40,7 @@ export const login = async (req, res, next) => {
       return next(createError(401, "Email/Password is incorrect!"));
     }
 
-    // create jwt
+    // create jwt with userId and isAdmin
     const token = jwt.sign(
       { id: user._id, isAdmin: user.idAdmin },
       process.env.JWT
