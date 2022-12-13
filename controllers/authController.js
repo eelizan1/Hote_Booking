@@ -42,7 +42,7 @@ export const login = async (req, res, next) => {
 
     // create jwt with userId and isAdmin
     const token = jwt.sign(
-      { id: user._id, isAdmin: user.idAdmin },
+      { id: user._id, isAdmin: user.isAdmin },
       process.env.JWT
     );
 
