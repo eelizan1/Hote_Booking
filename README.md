@@ -17,7 +17,7 @@ I was not able to find free or affordable hosting so until then here are some sc
 
 ### Booking Page
 
-![Alt text](/images/bookig.png "Booking Page")
+![Alt text](/images/booking.png "Booking Page")
 
 ### Hotel Page
 
